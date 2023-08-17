@@ -1,20 +1,19 @@
-pipeline{
+pipeline{ 
 
 agent any{
 
-Stages{
-stage("build"){
- steps{
-echo 'hellow buid'
- }
-
+stages{
+   
+   stage("build"){
+       echo ("building the application");
+      }
+   stage("testing"){
+      echo ("testing the application");
+      }
+   stage("deploying "){
+       echo ("deploying the application");
+      }
 }
-
 }
-
-
-}
-
-
 
 }
