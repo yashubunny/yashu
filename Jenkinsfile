@@ -1,14 +1,24 @@
+def gv
+
 pipeline {
     agent any
-    options {
-        // Timeout counter starts AFTER agent is allocated
-        timeout(time: 1, unit: 'SECONDS')
-    }
     stages {
-        stage('Example') {
+        stage("build") {
             steps {
-                echo 'Hello World'
+               echo "hello build"
             }
         }
-    }
+        stage("test") {
+             steps {
+               echo "test"
+            }
+
+        }
+        stage("deploy") {
+             steps {
+               echo "build"
+            }
+
+        }
+    }   
 }
