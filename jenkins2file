@@ -1,0 +1,11 @@
+pipeline{
+ agent any{
+   stages{
+     step("bulid "){
+        echo " bulid the pipeline 
+     }
+
+   }
+ }
+
+}
