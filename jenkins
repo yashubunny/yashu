@@ -1,0 +1,34 @@
+pipeline {
+    agent any
+    stages {
+        stage("requirements") {
+            steps {
+               echo "receiving the requirements for the application"
+            }
+        }
+        stage("bulid") {
+             steps {
+               echo "building the requirements for the application"
+            }
+
+        }
+        stage("develop") {
+             steps {
+               echo "developing the requirements for the application"
+            }
+
+        }
+       stage("test") {
+             steps {
+               echo "testing the code "
+            }
+
+        }  
+       stage("deploy") {
+             steps {
+               echo "deploying the code "
+            }
+
+        } 
+}   
+}
