@@ -6,6 +6,7 @@ pipeline {
         stage("build") {
             steps {
                echo "hello build"
+                echo " i am yashwanth"
             }
         }
         stage("test") {
