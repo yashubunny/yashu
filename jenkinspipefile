@@ -1,0 +1,21 @@
+pipeline{
+    agent any
+        stages{
+            stage('Git clone'){
+                steps{
+                    git branch: 'main', url: 'https://github.com/yashubunny/yashu.git'
+                }
+            }
+            stage('test'){
+                steps{
+                  echo "testing is completed"
+                }
+            }
+            stage('Build'){
+                steps{
+                   echo "build is completed"
+                }
+            }
+        }
+    
+}
